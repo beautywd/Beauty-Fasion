@@ -1,13 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauti's Fasion</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <!-- section navication -->
+    <section class="container mx-auto  min-h-screen px-8">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between py-4"
+        >
+          <!-- Logo Section -->
+          <a href="#" class="flex items-center space-x-3">
+            <img src="/logo.png" class="h-8" alt="Logo" />
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+
+          <!-- Navigation Links -->
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col md:flex-row font-medium p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Product
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- section hero start  -->
+
+      <section
+        class="flex items-center justify-center min-h-screen   mx-auto sm:flex-col lg:flex-row p-8"
+      >
+        <div class="w-full lg:w-1/2 px-6 lg:px-12 text-center lg:text-left">
+          <h1 class="text-4xl font-bold text-gray-800">BE THE PENGUINS</h1>
+          <h1 class="text-4xl font-bold text-gray-800">OF WINTER</h1>
+          <p class="text-justify">
+            Penguins thrive in extreme cold. This could symbolize the idea of
+            enduring challenges and staying strong no matter how tough the
+            conditions get."
+          </p>
+          <br />
+          <button
+            class="btn border-green-400 text-white font-bold bg-green-400 hover:text-white flex items-center space-x-2 px-4 py-2 rounded"
+          >
+            <img src="/ICON.PNG" alt="" class="h-5 w-5" />
+            <span>BUY NOW</span>
+          </button>
+        </div>
+        <div class="w-1/2 flex justify-center">
+          <img
+            src="/model.png"
+            alt="Winter Model"
+            class="max-w-full h-auto w-full lg:w-1/2"
+          />
+        </div>
+      </section>
+    </section>
+
+    <!-- card section start -->
+    <div class="p-8 mx-auto container  lg:text-left">
+      <h1 class="text-center md:text-left font-2xl">WOMEN JACKET</h1>
+    </div>
+    <section
+      class="p-8 container mx-auto grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-4"
+    >
+      <!-- card 1 -->
+      <div
+        class="h-[550px] w-[379px] border  ps-4 py-4 rounded-lg mx-auto block"
+      >
+        <div class="h-[327px] w-[334px] bg-gray-300 shadow-lg mx-auto block">
+          <div class="h-[293px] w-[293px] overflow-hidden">
+            <img
+              class="object-fit ps-8 h-full w-full"
+              src="/jacket-1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="font-bold pt-5">Yellow Coat Jacket</h1>
+        <p>
+          Winter er shada, kalo, ba gray background-e yellow ekta fresh ebong
+          energetic feel dey.
+        </p>
+        <div class="flex gap-x-28 py-10 border-blue-500 rounded-lg">
+          <p class="mb-2 text-2xl font-bold text-orange-500 ">$234</p>
+          <button
+            class="w-[170px] h-[60px] inline-flex items-center px-12 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+
+      <!-- card 1 end  -->
+      <!-- card 2 start -->
+      <div
+        class="h-[550px] w-[379px] border  ps-4 py-4 rounded-lg mx-auto block"
+      >
+        <div class="h-[327px] w-[334px] bg-gray-300 shadow-lg">
+          <div class="h-[293px] w-[293px] overflow-hidden">
+            <img
+              class="object-fit ps-8 h-full w-full"
+              src="/jacket-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="font-bold pt-5">ladies Jacket</h1>
+        <p>
+          Winter er shada, kalo, ba gray background-e yellow ekta fresh ebong
+          energetic feel dey.
+        </p>
+        <div class="flex gap-x-28 py-10 border-blue-500 rounded-lg">
+          <p class="mb-2 text-2xl font-bold  text-orange-500">$234</p>
+          <button
+            class="w-[170px] h-[60px] inline-flex items-center px-12 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <!-- card 2 end  -->
+      <!-- card 3 start -->
+      <div
+        class="h-[550px] w-[379px] border  ps-4 py-4 rounded-lg mx-auto block"
+      >
+        <div class="h-[327px] w-[334px] bg-gray-300 shadow-lg">
+          <div class="h-[293px] w-[293px] overflow-hidden">
+            <img
+              class="object-fit ps-8 h-full w-full"
+              src="/jacket-3.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="font-bold pt-5">Women leadher jacket</h1>
+        <p>
+          Winter er shada, kalo, ba gray background-e yellow ekta fresh ebong
+          energetic feel dey.
+        </p>
+        <div class="flex gap-x-28 py-10 border-blue-500 rounded-">
+          <p class="mb-2 text-2xl font-bold  text-orange-500">$234</p>
+          <button
+            class="w-[170px] h-[60px] inline-flex items-center px-12 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <!-- card 3 end  -->
+
+      <!-- card 4 start -->
+      <div
+        class="h-[550px] w-[379px] border  ps-4 py-4 rounded-lg mx-auto block"
+      >
+        <div class="h-[327px] w-[334px] bg-gray-300 shadow-lg">
+          <div class="h-[293px] w-[293px] overflow-hidden">
+            <img
+              class="object-fit ps-8 h-full w-full"
+              src="/jacket-4.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="font-bold pt-5">snowboard Jacket Mens</h1>
+        <p>
+          Winter er shada, kalo, ba gray background-e yellow ekta fresh ebong
+          energetic feel dey.
+        </p>
+        <div class="flex gap-x-28 py-10 border-blue-500 rounded-">
+          <p class="mb-2 text-2xl font-bold  text-orange-500">$234</p>
+          <button
+            class="w-[170px] h-[60px] inline-flex items-center px-12 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <!-- card 4 end  -->
+      <!-- card 5 start -->
+      <div
+        class="h-[550px] w-[379px]  ps-4 py-4 rounded-lg mx-auto block"
+      >
+        <div class="h-[327px] w-[334px] bg-gray-300 shadow-lg">
+          <div class="h-[293px] w-[293px] overflow-hidden">
+            <img
+              class="object-fit ps-8 h-full w-full"
+              src="/jacket-5.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="font-bold pt-5">Man leather Jacket</h1>
+        <p>
+          Winter er shada, kalo, ba gray background-e yellow ekta fresh ebong
+          energetic feel dey.
+        </p>
+        <div class="flex gap-x-28 py-10 border-blue-500 rounded-">
+          <p class="mb-2 text-2xl font-bold  text-orange-500">$234</p>
+          <button
+            class="w-[170px] h-[60px] inline-flex items-center px-12 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <!-- card 5 end  -->
+
+      <!-- card 6 start -->
+      <div
+        class="h-[550px] w-[379px]  ps-4 py-4 rounded-lg mx-auto block"
+      >
+        <div class="h-[327px] w-[334px] bg-gray-300 shadow-lg">
+          <div class="h-[293px] w-[293px] overflow-hidden">
+            <img
+              class="object-fit ps-8 h-full w-full"
+              src="/jacket-6.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="font-bold pt-5">Man casual Jackets</h1>
+        <p>
+          Winter er shada, kalo, ba gray background-e yellow ekta fresh ebong
+          energetic feel dey.
+        </p>
+        <div class="flex gap-x-28 py-10 border-blue-500 rounded-">
+          <p class="mb-2 text-2xl font-bold  text-orange-500">$234</p>
+          <button
+            class="w-[170px] h-[60px] inline-flex items-center px-12 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-800"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <!-- card 6 end  -->
+    </section>
+    <!-- section footer -->
+    <section class="container m-45 p-8  mx-auto">
+      <div
+        class="flex sm:flex-col-reverse md:flex-row items-center justify-between gap-8"
+      >
+        <div class="space-y-8">
+          <!-- First Item -->
+          <div class="flex items-center gap-4 h-[135px] w-[489px] shadow-lg">
+            <img class="h-20 w-16" src="/house.png" alt="Home Logo" />
+            <div>
+              <h1 class="text-xl font-bold">Discover Your Dream Home</h1>
+              <p class="text-xl text-gray-700">
+                Browse through our listings and find the perfect place to call
+                home.
+              </p>
+            </div>
+          </div>
+          <!-- Second Item -->
+          <div class="flex items-center gap-4 h-[135px] w-[489px] shadow-lg">
+            <img class="h-20 w-16" src="/box.png" alt="box Logo" />
+            <div>
+              <h1 class="text-xl font-bold">Find the perfect fit</h1>
+              <p class="text-xl text-gray-700">
+                one can of many reasons you can shop with pease of month .
+              </p>
+            </div>
+          </div>
+          <!-- Third Item -->
+          <div class="flex items-center gap-4 h-[135px] w-[489px] shadow-lg">
+            <img class="h-20 w-16" src="/question.png" alt="question Logo" />
+            <div>
+              <h1 class="text-xl font-bold">Contact Our Sellar</h1>
+              <p class="text-gray-700 text-xl">
+                They are here to helo you .that's quite literally what we pay
+                them for.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="flex justify-center w-[599px] h-[354px]">
+          <img
+            class="h-auto w-full max-w-sm"
+            src="/shoping.png"
+            alt="Shopping Experience"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
